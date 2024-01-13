@@ -1,0 +1,28 @@
+Memory is assigned into 4 segments:
+    1.Code/Text segment:
+     -code is stored in this segment
+    2.Static/Global Variables:
+        -store Variables
+        -further divided into 2 segments:
+            a.Data segment-for initialised Variables/data(int i=1;)
+            b.BSS(Block Started by Symbol) segment-for uninitialised Variables/data(int i;)
+
+    
+    3.Stack
+        -grows as code is running 
+        -compiler allocates some space for stack part of code.If it is exhausted(infinite recursion),it results in stack overflow. 
+        -some memory is reserved for main(stackframe of main) at start of the program then other functions that are inside main are pushed to stack. Main waits for this to be completed.
+        -stack follows FILO(first in last out) i.e. jo pehle aaya vo last niklega,jo last aaya vo pehle niklega
+        -once a function is completed it is popped from the stack
+
+    
+    4.Heap
+        -grows when we dynamically allocate memory
+        -dynamic memory
+        -we create a pointer in main to point to a memory block in heap
+        -this memory will not be freed in case of overwriting the pointer
+
+
+
+*generally stack and heap grow in opposite directions and if stack and heap meet it results in stack overflow error which means too much memory is used
+*stackframe-list fo all the storage(variables) of function

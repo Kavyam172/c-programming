@@ -1,0 +1,24 @@
+Functions for dynamic memory alloctaion:
+    1.malloc()                             SYNTAX: ptr = (int*) malloc(size in bytes)
+        -memory alloctaion
+        -reserves a block of memory in heap for a fixed no. of bytes
+        -returns a void pointer, so we typecast it into pointer of some datatype
+        - if memory is insufficient, it returns NULL pointer
+        -all values of allocated memory have garbage value by default
+    
+
+    2.calloc()                             SYNTAX: ptr = (int*) calloc(n,size in bytes)
+        - contiguous alloctaion
+        -reserves n blocks in heap for a guven no. of bytes
+        -retruns void pointer,needs to be typecasted
+        -return NULL pointer if alloctaion fails
+        -allocated memory has 0 as value by default
+
+    3.realloc()                            SYNTAX: ptr = (int*) realloc(ptr,new size in bytes)
+        -reallocation
+        -we can reallocate memory of a given pointer where memory is already allocated
+        -this is useful when memory is insufficient
+
+
+    4.free()                                SYNTAX: free(ptr)
+        -free the memory

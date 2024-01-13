@@ -1,0 +1,12 @@
+Pre-processing
+    -comment hataya
+    -#inculde wali file ka code import kiya
+    -.i wali file mein ye code save hota hai
+Compilation
+    -.i wale code ko Assembly level langauage mein convert krta hai
+    -.s wali file mein save hota hai
+Assembly
+    -.s wali Assembly level language ko machine level language mein convert krta hai
+    -.o mein save hota hai
+linking
+    - in saari files ko link krke executable (.exe) file banata hai

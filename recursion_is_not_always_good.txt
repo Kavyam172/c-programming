@@ -1,0 +1,2 @@
+Recursive aproach mein zyada time lgta hai kyunki yeh boht saari redundent function calls krta hai
+chote numbers mein yeh farak pta nhi chlta lekin bade numbers mein pta chalta hai
